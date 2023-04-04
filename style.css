@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300&display=swap');
+
+/*font-family: 'Lobster', cursive;
+font-family: 'Montserrat', sans-serif;*/
+
+* {
+	box-sizing: border-box;
+}
+
+@media only screen and (min-width: 700px) {
+
+body,html {
+padding:0px;
+margin: 0px;
+background-color: #313853;
+font-family: 'Montserrat', sans-serif;
+}
+
+#siteGrid {
+	display: grid;
+	grid-template-areas:
+	"title title title"
+	"menu menu menu"
+	"rText rText rImage"
+	"lImage lText lText"
+	"hText hText hImage";
+	grid-gap:2vw;
+	margin:5vw;
+}
+
+#title{
+	font-family: 'Lobster', cursive;
+	margin: 0px;
+	height: 150px;
+	grid-area:title;
+	color: #313853;
+	background-color: #D2E8E4;
+	font-size: 72px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#title p{
+	text-align: center;
+}
+
+.menuBar {
+	grid-area:menu;
+	background-color: #D2E8E4;
+	width: 100%;
+	height:73px;
+}
+
+.menuButtons {
+	width: 16%;
+	position: center;
+	text-align:center;
+	padding: 21px;
+	font-size: 25px;
+	color: #313853;
+	font-family: 'Montserrat', sans-serif;
+	display: inline-block;
+	background-color: #D2E8E4;
+}
+
+.menuButtons:hover{
+	background-color: #D17F8C;
+	color: white;
+}
+
+.headings{
+	padding-top:15px;
+	font-family: 'Lobster', cursive;
+	margin:0px;
+	color: #313853;
+	font-size: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.bodyText{
+	font-family: 'Montserrat';
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-block-end: 15px;
+	margin:0px;
+	font-size: 20px;
+	color: #313853;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.mhotel{
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.mrest{
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.brest{
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.qrest{
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.srest{
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.brrest{
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.bhotel{
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.ferry{
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.garden{
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.stadium{
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.statue{
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.shotel{
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.brhotel{
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.qhotel{
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.boroughs{
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.nyc{
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.bridge{
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+.subway{
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.textContainer{
+	height:265px;
+	width: 950px;
+	background-color:#D17F8C;
+}
+
+.imageContainer{
+	height:265px;
+	width: 300px;
+	background-color:#D2E8E4;
+}
+
+.restText{
+	grid-area:rText;
+}
+
+.restImg{
+	grid-area:rImage;
+}
+
+.landText{
+	grid-area:lText;
+}
+
+.landImg{
+	grid-area:lImage;
+}
+
+.hotelText{
+	grid-area:hText;
+}
+
+.hotelImg{
+	grid-area:hImage;
+}
+}
+
+@media only screen and (max-width: 599px) {
+
+body,html {
+	padding:0px;
+	margin: 0px;
+	background-color: #313853;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#siteGrid {
+	display: grid;
+	grid-template-areas:
+	"title title title"
+	"menu menu menu"
+	"rText rText rImage"
+	"lImage lText lText"
+	"hText hText hImage";
+	grid-gap:2vw;
+	margin:10vw;
+}
+
+#title{
+	font-family: 'Lobster', cursive;
+	margin-bottom: 1vh;
+	height: 15vh;
+	width:82vw;
+	grid-area:title;
+	color: #313853;
+	background-color: #D2E8E4;
+	font-size: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#title p{
+	text-align: center;
+}
+
+.menuBar {
+	grid-area:menu;
+	background-color: #D2E8E4;
+	width: 82vw;
+	padding: 1vh;
+	margin-top: 0px;
+	margin-bottom: 1vh;
+	height:5vh;
+}
+
+.menuButtons {
+	width: 15%;
+	position: center;
+	text-align:center;
+	height:2vh;
+	font-size: 7px;
+	color: #313853;
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: flex-center;
+	display: inline-block;
+	background-color: #D2E8E4;
+}
+
+.menuButtons:hover{
+	background-color: #D17F8C;
+	color: white;
+}
+
+.headings{
+	padding-top:15px;
+	font-family: 'Lobster', cursive;
+	margin:0px;
+	color: #313853;
+	font-size: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.bodyText{
+	font-family: 'Montserrat';
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-block-end: 15px;
+	margin:0px;
+	font-size: 5px;
+	color: #313853;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.mhotel{
+	padding: 1vw;
+	padding-left: 1vw;
+	padding-top: 6vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 14vh;
+	height: 16vh;
+}
+
+.mrest{
+	padding: 1vw;
+	padding-left: 1vw;
+	padding-top: 6vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 14vh;
+	height: 16vh;
+}
+
+.brest{
+	padding: 1vw;
+	padding-left: 1vw;
+	padding-top: 6vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 14vh;
+	height: 16vh;
+}
+
+.qrest{
+	padding: 1vw;
+	padding-left: 1vw;
+	padding-top: 6vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 14vh;
+	height: 16vh;
+}
+
+.srest{
+	padding: 1vw;
+	padding-left: 1vw;
+	padding-top: 6vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 14vh;
+	height: 16vh;
+}
+
+.brrest{
+	padding: 1vw;
+	padding-left: 1vw;
+	padding-top: 6vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 14vh;
+	height: 16vh;
+}
+
+.bhotel{
+	padding: 1vw;
+	padding-left: 1vw;
+	padding-top: 6vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 14vh;
+	height: 16vh;
+}
+
+.ferry{
+	padding: 1vw;
+	padding-left: 1vw;
+	padding-top: 6vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 14vh;
+	height: 16vh;
+}
+
+.garden{
+	padding: 1vw;
+	padding-left: 1vw;
+	padding-top: 6vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 14vh;
+	height: 16vh;
+}
+
+.stadium{
+	padding: 1vw;
+	padding-left: 1vw;
+	padding-top: 6vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 14vh;
+	height: 16vh;
+}
+
+.statue{
+	padding: 1vw;
+	padding-left: 1vw;
+	padding-top: 6vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 14vh;
+	height: 16vh;
+}
+
+.shotel{
+	padding: 1vw;
+	padding-left: 1vw;
+	padding-top: 6vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 14vh;
+	height: 16vh;
+}
+
+.brhotel{
+	padding: 1vw;
+	padding-left: 1vw;
+	padding-top: 6vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 14vh;
+	height: 16vh;
+}
+
+.qhotel{
+	padding: 1vw;
+	padding-left: 1vw;
+	padding-top: 6vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 14vh;
+	height: 16vh;
+}
+
+.boroughs{
+	padding: 1vw;
+	padding-left: 1vw;
+	padding-top: 6vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 14vh;
+	height: 16vh;
+}
+
+.nyc{
+	padding: 1vw;
+	padding-left: 1vw;
+	padding-top: 6vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 14vh;
+	height: 16vh;
+}
+
+.bridge{
+	padding: 1vw;
+	padding-left: 1vw;
+	padding-top: 6vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 14vh;
+	height: 16vh;
+}
+
+.subway{
+	padding: 1vw;
+	padding-left: 1vw;
+	padding-top: 6vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 14vh;
+	height: 16vh;
+}
+
+.textContainer{
+	height:27vh;
+	width: 50vw;
+	margin-bottom: 1vh;
+	background-color:#D17F8C;
+}
+
+.imageContainer{
+	height:27vh;
+	width: 30vw;
+	margin-bottom: 1vh;
+	background-color:#D2E8E4;
+}
+
+.restText{
+	grid-area:rText;
+}
+
+.restImg{
+	grid-area:rImage;
+}
+
+.landText{
+	grid-area:lText;
+}
+
+.landImg{
+	grid-area:lImage;
+}
+
+.hotelText{
+	grid-area:hText;
+}
+
+.hotelImg{
+	grid-area:hImage;
+}
+}
